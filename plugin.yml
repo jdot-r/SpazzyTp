@@ -1,0 +1,6 @@
+name: SpazzyTp
+main: Spazzy\Main
+author: Skullex
+version: 0.0.1
+api: [1.0.0, 1.1.0]
+description: Plays a Enderman teleport sound on teleport event
