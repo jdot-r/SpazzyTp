@@ -1,11 +1,17 @@
 # SpazzyTp
-Adds a Spazzy new sound to teleportation
+Without @TheDeibo @PocketKiller @Vaivez66 @MichaelM04 @AndrewBit This plugin would have never been successfully submitted. Thanks for the support <3 on the PocketmineForums
+
+This is basically a fun informational plugin that adds a Spazzy new sound to teleportation!! Also provides you with the command
+
+Command:
+/pos 
+
+To give you your current coordinates in that certain world. This plugins intended use is for Anyone and everyone!!
 
 
-The spazziest teleportation plugin there is
+Alternate Categories:
+Fun
+Teleportation
 
-This plugin watches EntityTeleportEvent, once a player teleports anywhere, whether to another player or to hub/lobby it plays a special sound ;)
-
-The sound can only be edited through the Main.php because I was too lazy and busy to setup a config.yml. Sorry :P
-
-This plugins intended use is for Everyone and Anyone
+Plugin Access:
+Entities
