@@ -1,10 +1,10 @@
 name: SpazzyTp
 main: Spazzy\Main
 version: "0.0.1"
-api: [1.0.0, 1.1.0]
+api: [1.0.0, 1.1.0, 1.14.0, 2.0.0]
 load: POSTWORLD
 author: Skullex
 commands:
  pos:
-  description: gives you your coordinates
+  description: Gves you your coordinates
   usage: /pos
