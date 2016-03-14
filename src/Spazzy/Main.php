@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\Player;
-use pocketmine\utils\TextFormat;
+use pocketmine\utils\TextFormat as Color;
 use pocketmine\event\entity\EntityTeleportEvent;
 use pocketmine\level\particle\PortalParticle;
 use pocketmine\level\sound\EndermanTeleportSound;
@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener {
 	}
 
 	public function onLoad(){
-		$this->getLogger()->info("SpazzyTp §aenabled");
+		$this->getLogger()->info(Color::GREEN ."SpazzyTp enabled");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
@@ -36,10 +36,10 @@ class Main extends PluginBase implements Listener {
 
                 			$playerLevel = $sender->getLevel()->getName();
 
-                			$sender->sendMessage(TextFormat::BLUE . " x:" . TextFormat::GREEN . $outX . ", y:" . TextFormat::YELLOW . $outY . ", z:" . TextFormat::GREEN . $outZ . ". On: " . TextFormat::AQUA . $playerLevel);
+                			$sender->sendMessage(Color::BLUE . " x:" . Color::GREEN . $outX . ", y:" . Color::YELLOW . $outY . ", z:" . Color::GREEN . $outZ . ". On: " . Color::AQUA . $playerLevel);
 					return true;
 				}else{
-					$sender->sendMessage("§cThis command only works §ein§f-§egame.");
+					$sender->sendMessage(Color::RED ."This command only works §ein§f-§egame.");
             			}
 			}
 		}    
@@ -52,6 +52,6 @@ class Main extends PluginBase implements Listener {
 	 }
 	
 	 public function onDisable(){
-        $this->getLogger()->info("SpazzyTp §cdisabled.");
+        $this->getLogger()->info(Color::RED ."SpazzyTp disabled.");
 	 }
 }
