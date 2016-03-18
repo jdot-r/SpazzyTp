@@ -36,10 +36,10 @@ class Main extends PluginBase implements Listener {
 
                 			$playerLevel = $sender->getLevel()->getName();
 
-                			$sender->sendMessage(Color::BLUE . " x:" . Color::GREEN . $outX . ", y:" . Color::YELLOW . $outY . ", z:" . Color::GREEN . $outZ . ". On: " . Color::AQUA . $playerLevel);
+                			$sender->sendMessage(Color::BLUE . " x: " . Color::GREEN . $outX . ", y: " . Color::YELLOW . $outY . ", z: " . Color::GREEN . $outZ . ". On: " . Color::AQUA . $playerLevel . Color::RED . "!");
 					return true;
 				}else{
-					$sender->sendMessage(Color::RED ."This command only works". Color::YELLOW ."in". Color::WHITE ."-". Color::YELLOW ."game!");
+					$sender->sendMessage(Color::RED ."This command only works" . Color::YELLOW ."in" . Color::WHITE ."-" . Color::YELLOW ."game!");
             			}
 			}
 		}    
