@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener {
 	}
 
 	public function onLoad(){
-		$this->getLogger()->info(Color::GREEN ."SpazzyTp enabled");
+		$this->getLogger()->info(Color::GREEN ."SpazzyTp has been successfully enabled!");
 	}
 
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args){
@@ -39,7 +39,7 @@ class Main extends PluginBase implements Listener {
                 			$sender->sendMessage(Color::BLUE . " x:" . Color::GREEN . $outX . ", y:" . Color::YELLOW . $outY . ", z:" . Color::GREEN . $outZ . ". On: " . Color::AQUA . $playerLevel);
 					return true;
 				}else{
-					$sender->sendMessage(Color::RED ."This command only works §ein§f-§egame.");
+					$sender->sendMessage(Color::RED ."This command only works". Color::YELLOW ."in". Color::WHITE ."-". Color::YELLOW ."game!");
             			}
 			}
 		}    
@@ -52,6 +52,6 @@ class Main extends PluginBase implements Listener {
 	 }
 	
 	 public function onDisable(){
-        $this->getLogger()->info(Color::RED ."SpazzyTp disabled.");
+        $this->getLogger()->info(Color::RED ."SpazzyTp has been successfully disabled!");
 	 }
-}
+} // Adding more creative things soon, including visible teleportation particles!
