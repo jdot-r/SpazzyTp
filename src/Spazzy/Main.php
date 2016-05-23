@@ -43,7 +43,7 @@ class Main extends PluginBase implements Listener {
             			}
 			}
 		}    
-	 public function onTeleport(EntityTeleportEvent $event){
+	 /*public function onTeleport(EntityTeleportEvent $event){
         $entity = $event->getEntity();
         $fizz = new EndermanTeleportSound($entity);
         $particle = new PortalParticle($entity);
@@ -54,4 +54,5 @@ class Main extends PluginBase implements Listener {
 	 public function onDisable(){
         $this->getLogger()->info(Color::RED ."SpazzyTp has been successfully disabled!");
 	 }
-} // Adding more creative things soon, including visible teleportation particles!
+} // Adding more creative things soon, including visible teleportation particles!*/
+}
